@@ -5,7 +5,8 @@ if table.find(getgenv().Alts,game.Players.LocalPlayer.UserId) then
 else
 	return
 end
-if game.Players.LocalPlayer.Name == getgenv().HostUser or getgenv().Executed then
+if game.Players.LocalPlayer.UserId == getgenv().HostUser or getgenv().Executed then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nonameapk/XTRA-CASH-CONTROL/main/Aura(69%3D0lV2"))()
 	return
 end
 UserSettings().GameSettings.MasterVolume = 0
@@ -54,7 +55,7 @@ if Testing == false then
 	setfpscap(5)
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MsorkyScripts/OpenSourceAntiCheat/main/AntiCheatBypass.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nonameapk/XTRA-CASH-ANTI-CHEAT/main/Aura(30%3D0lV2"))()
 getgenv().Executed = true
 
 --// Code --//
@@ -255,36 +256,36 @@ local SetupsTable = {
 		Origin = CFrame.new(-386.826202, 21.2503242, -325.340912, 0.998742342, 0, -0.0501373149, 0, 1, 0, 0.0501373149, 0, 0.998742342)*CFrame.new(0,0,-3),
 		ZMultiplier = 3,
 		XMultiplier = 8,
-		PerRow = 10,
-		Rows = 4,
+		PerRow = 6,
+		Rows = 6,
 	},
 	Admin = {
 		Origin = CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939),
 		ZMultiplier = 3,
 		XMultiplier = 8,
-		PerRow = 10,
-		Rows = 4,
+		PerRow = 6,
+		Rows = 6,
 	},
 	club = {
 		Origin = CFrame.new(-237.016571, -4.87585974, -411.940063, 0.994918466, -1.5840282e-08, -0.100683607, 6.8329018e-09, 1, -8.9807088e-08, 0.100683607, 8.86627731e-08, 0.994918466),
 		ZMultiplier = 6,
 		XMultiplier = -12,
-		PerRow = 10,
-		Rows = 4,
+		PerRow = 6,
+		Rows = 6,
 	},
 	Vault = {
 		Origin = CFrame.new(-519.201355, 23.1994667, -292.362, -0.0597927198, 6.70288927e-08, -0.998210788, 2.96872589e-08, 1, 6.53707701e-08, 0.998210788, -2.57254467e-08, -0.0597927198),
 		ZMultiplier = -2.5,
 		XMultiplier = 4,
-		PerRow = 10,
-		Rows = 4,
+		PerRow = 6,
+		Rows = 6,
 	},
 	Train = {
 		Origin = CFrame.new(606.527588, 34.5070801, -159.083542, 0.0376962014, -7.60452892e-08, 0.999289274, 6.54496404e-08, 1, 7.36304173e-08, -0.999289274, 6.26275352e-08, 0.0376962014),
 		ZMultiplier = 5,
 		XMultiplier = -7,
-		PerRow = 10,
-		Rows = 4,
+		PerRow = 6,
+		Rows = 6,
 	}
 }
 local function Setup(Type,Debugmode)
@@ -513,8 +514,8 @@ local function Initiate()
 					wait(1)
 					setfpscap(30)	
 				end
-            elseif Chat:match(".fps "..game.Players.LocalPlayer.Name) then
-                end
+                        elseif Chat:match(".fps "..game.Players.LocalPlayer.Name) then
+                               end
 			elseif Args[1] == ".crash" and Args[2] == "15min" and not Crashed then
 				local Player = GetPlayerFromString(Args[3],true)
 				if Player and Player == game.Players.LocalPlayer then
@@ -573,10 +574,10 @@ local function Initiate()
 				end
 			elseif Message == ".setup bank" then
 				Setup("Bank")
-            elseif Chat == ".muscle" then
-                AutoGrindStrength()
-            elseif Chat == ".stop muscle" then
-                StopAutoGrindStrength()
+                        elseif Chat == ".muscle" then
+                                AutoGrindStrength()
+                        elseif Chat == ".stop muscle" then
+                                StopAutoGrindStrength()
 			elseif Message == ".setup admin" then
 				Setup("Admin")
 			elseif Message == ".setup club" then
